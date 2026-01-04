@@ -11,12 +11,6 @@ WORKDIR /app
 # Copiez d'abord le fichier requirements.txt pour optimiser le caching des layers Docker
 COPY requirements.txt .
 
-RUN apt-get update && apt-get install -y \
-    libgl1 \
-    libglib2.0-0 \
-    && rm -rf /var/lib/apt/lists/*
-
-
 # Installez les dépendances sans cache pour réduire la taille de l'image
 RUN pip install --no-cache-dir -r requirements.txt \
     && pip install gunicorn  # Assurez-vous que gunicorn est installé si pas déjà dans requirements.txt
