@@ -242,11 +242,8 @@ def random_stream():
 # Route pour favicon
 @app.route('/favicon.ico')
 def favicon():
-    try:
-        return flask.send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico')
-    except FileNotFoundError:
-        print("favicon.ico non trouvé")
-        return '', 204  # Réponse vide avec statut 204 (No Content)
+    return app.send_static_file('favicon.ico')
+
 
 # =====================================================
 # MAIN
