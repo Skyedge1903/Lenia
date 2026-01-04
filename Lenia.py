@@ -91,6 +91,7 @@ def make_lut():
 # FLASK
 # =====================================================
 app = flask.Flask(__name__)
+server = app
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>
@@ -251,4 +252,4 @@ def favicon():
 # MAIN
 # =====================================================
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
