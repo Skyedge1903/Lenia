@@ -57,7 +57,7 @@ Le mode principal démarre à partir d’un **état initial préconfiguré**, pe
 
 Un second mode, accessible via la route `/random`, initialise le système avec du bruit aléatoire. Dans ce cas, il est possible d’observer l’émergence progressive de structures organisées à partir du chaos initial, lorsque les conditions le permettent.
 
-![Etat initial 2](img/random.png)
+<img src="img/random.png" alt="Etat initial 2" width="33%">
 
 Dans les deux cas, le système évolue ensuite librement, sans intervention.
 
