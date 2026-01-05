@@ -5,7 +5,7 @@ Ce projet est une implémentation web temps réel de **Lenia**, un système de v
 Le projet est accessible en ligne à l’adresse suivante :  
 👉 https://lenia.518.fr/
 
----
+
 
 ## Lenia : un système de vie artificielle
 
@@ -17,7 +17,7 @@ Dans ces conditions, des structures cohérentes apparaissent spontanément. Elle
 
 Les formes observées **ne sont pas programmées**. Elles émergent.
 
----
+![Orbium](img/orbium_icon.png)
 
 ## Une vie qui n’est pas codée
 
@@ -30,7 +30,7 @@ Tout ce qui est observé résulte exclusivement :
 
 Ce projet illustre ainsi un phénomène de **complexité émergente**, où des comportements riches et organisés apparaissent sans plan, sans objectif et sans représentation interne.
 
----
+
 
 ## Implémentation et choix techniques
 
@@ -45,7 +45,7 @@ Le rendu a été volontairement simplifié et externalisé vers le navigateur vi
 
 L’interface web repose sur Flask côté serveur et sur un rendu Canvas côté client, sans dépendance lourde ni framework complexe.
 
----
+
 
 ## États initiaux et émergence
 
@@ -53,11 +53,14 @@ Deux modes de fonctionnement sont proposés.
 
 Le mode principal démarre à partir d’un **état initial préconfiguré**, permettant d’observer immédiatement une structure déjà formée. Ce choix a été fait afin d’éviter un temps d’attente parfois long avant l’émergence spontanée.
 
+![Etat initial 1](lenia_save.png)
+
 Un second mode, accessible via la route `/random`, initialise le système avec du bruit aléatoire. Dans ce cas, il est possible d’observer l’émergence progressive de structures organisées à partir du chaos initial, lorsque les conditions le permettent.
+
+![Etat initial 2](img/random.png)
 
 Dans les deux cas, le système évolue ensuite librement, sans intervention.
 
----
 
 ## Ce que montre ce projet
 
@@ -66,14 +69,14 @@ qu’un ensemble de règles mathématiques simples, appliquées localement, peut
 
 Il s’agit d’un terrain d’exploration entre mathématiques, physique, informatique et philosophie, où la notion même de « vie » peut être questionnée.
 
----
+![Evolution](img/evolution.png)
 
 ## Licence et usage
 
 Projet expérimental et exploratoire, mis à disposition à des fins éducatives, artistiques et de recherche.  
 Libre à chacun de l’étudier, le modifier et l’expérimenter.
 
----
+
 
 ## Références
 
